@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coronavirus Intake Form for attend class</h1>
+    
+   <p>For all our safety, please file this out 24 hours prior to each class (until further notice). Be sure that the information you'll give is accurate and complete. Please get immediate medical attention if you have any of the severe COVID-19 signs</p> 
+    <form >
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">last name:</label><br>
+            <input type="text" id="lname" name="lname" maxlength="6"><br>
+            <label for="">Date of Birth:</label><br>
+            <input type="date" name="born" min="1900-00-00" max="2003-01-01"><br>
+            <label for="">phone:</label><br>
+            <input type="number" autocomplete="off"><br>
+            <label for="">Email:</label><br>
+            <input type="email" required autocomplete="off"><br>
+            <label for="">Do you have "تطمئن-تباعد-توكلنا":</label>
+            <input type="radio" name="mm" value="" required> <label for="">yes</label>
+            <input type="radio" name="mm" value="" required> <label for="">No</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>class information</legend>
+            <label for="">choose class:</label><br>
+            <input list="classes" name="classes">
+            <datalist id="classes">
+                <option value="204IT:Wep programming"></option>
+                <option value="201 cs:programming 1"></option>
+                <option value="202 cs:programming 2"></option>
+                <option value="412 cs:computer ethic"></option>
+
+            </datalist>
+            <br>
+            <p>please explain why you need to attend lab</p>
+            <textarea name="message" id="" cols="50" rows="20">
+            </textarea>
+        </fieldset>
+    
+    <fieldset>
+        <legend>Health information</legend>
+        <label for="">How healthy do you feel in general?</label><br>
+       <span>0</span> <input type="range" max="10" min="0" step="1"><span>10</span> 
+        <p>Check the symptoms that you have experienced in the PAST Week :</p>
+        <input type="checkbox" ><label for="">Fever/Chills</label><br>
+        <input type="checkbox" ><label for="">Headaches</label><br>
+        <input type="checkbox" ><label for="">Coughing</label><br>
+        <input type="checkbox" ><label for="">Shortnessof breath</label><br>
+        <input type="checkbox" ><label for="">Recent loss of sense of smell or taste</label>
+        
+    </fieldset>
+    <button type="submit"> send</button>
+</body>
+</form>
+</html>

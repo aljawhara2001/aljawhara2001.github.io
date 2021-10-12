@@ -1,0 +1,62 @@
+body{
+   
+}
+.national {
+ 
+
+  
+}
+
+h1{
+    color: red;
+}
+
+input[type="range"]{
+color: rgb(7, 7, 54);
+border-radius:5px  ;
+
+}
+.info {
+    
+    position: absolute;
+    margin-top: 300px;
+    margin-left:100px ;
+}
+.info label{
+    padding-top:10px ;
+}
+ul {
+    list-style: square;
+}
+
+ol{
+    list-style: upper-roman;
+}
+ol ol{
+    list-style: lower-roman;
+}
+a:active,a:hover{
+text-decoration: underline;
+}
+a:active{
+    color: black;
+}
+
+a:hover{
+    color: green;
+
+    }
+a:visited,a{
+    text-decoration: none;
+
+}
+.header{
+  
+    text-align: left !important;
+}
+p{
+    margin-top: 30px;
+    font: 1em sans-serif;
+    color: black;
+    
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>read name, getHours</title>
+
+<script type=text/javascript>
+	function read(){
+		  name = window.prompt('Enter your name:','');
+		  const time = new Date();
+		  let hour = time.getHours();
+		  let minu = time.getMinutes();
+
+		  if(hour >= 12)
+		  {
+		  	window.alert("Good Afternoon " + name);
+		  }else
+		  {
+		  	window.alert("Good Morning " + name);
+		  }
+
+	}
+</script>
+</head>
+<body onload="read()">
+
+</body>
+</html>

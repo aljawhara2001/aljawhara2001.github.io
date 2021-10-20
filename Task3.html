@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculator Created Using JavaScript </title>
+	<script>
+			
+		function Cal(we,he)
+		{
+			h=0;
+			h = he.value / 100;
+			h *= h;
+			BMI = we.value / h;
+			n = document.getElementById('n');
+			n.innerHTML = BMI;
+			s = document.getElementById('s');
+			if(BMI < 18.5 && BMI > 0)
+				s.innerHTML = "Underweight";
+			else if(BMI >= 18.5 && BMI < 25)
+				s.innerHTML = "Healthy Weight";
+			else if(BMI >= 25 && BMI < 30)
+				s.innerHTML = "Overweight";
+
+		}
+
+	</script>
+</head>
+<body>
+		<h1>BMI Calculator Created Using JavaScript</h1>
+
+		Your Weight(kg): <input type="text" id="w"><br><br>
+		Your Height(cm): <input type="text" id="h"><br>
+<br>
+		<input type="button" onclick="Cal(document.getElementById('w'),document.getElementById('h'))" value="Calculate BMI">
+<br><br>
+		Your BMI: <label style="color:green;" id="n"></label>
+		<br><br>
+		This Means: You are <label style="color:green;" id="s"></label> <br><br><br>
+<a href="https://aljawhara2001.github.io/" style="font-size: 20px; background-color: yellow;">My github page</a>
+
+</body>
+</html>

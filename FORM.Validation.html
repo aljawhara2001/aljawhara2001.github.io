@@ -10,17 +10,29 @@
  //name should contaibn only letter 
  var regEx = /^[A-Za-z]+$/;
  if (!(x.match(regEx)))
- {document.getElementById('e1').innerHTML= "* only letter is allowed";
+ {document.getElementById("e1").innerHTML= "* only letter is allowed";
  
- document.getElementById('name').style.borderColor='red';
+ document.getElementById("e1").style.borderColor='red';
  r= false;} 
  else
- { document.getElementById('e1').innerHTML= " ";
- document.getElementById('name').style.borderColor='black';
+ { document.getElementById("e1").innerHTML= " ";
+ document.getElementById("e1").style.borderColor='black';
  } 
  return r;
  }
- 
+ //username 
+ var usr = document.getElementById("username").value; 
+        if (usr == "") {
+            document.getElementById("elusername").innerHTML = "* username must be filled out ";
+
+            document.getElementById("elusername").style.color = 'red';
+            return r;
+        }
+        else {
+            document.getElementById("elusername").innerHTML = " ";
+            document.getElementById("elusername").style.color = 'black';
+
+        }
  </script>
 </head>
 <body>
@@ -34,7 +46,7 @@
  <input type="password" id="pass"> <br><br>
  Confrim password:
  <input type="password" id="pass2"> <br><br>
- <input type="submit" value="SIGN UP">
+ <input type="submit" value="SIGN UP">    
 
  
 </form>

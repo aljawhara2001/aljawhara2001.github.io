@@ -10,29 +10,55 @@
  //name should contaibn only letter 
  var regEx = /^[A-Za-z]+$/;
  if (!(x.match(regEx)))
- {document.getElementById("e1").innerHTML= "* only letter is allowed";
+ {document.getElementById("el").innerHTML= "* only letter is allowed";
  
- document.getElementById("e1").style.borderColor='red';
+ document.getElementById("el").style.borderColor='red';
  r= false;} 
  else
- { document.getElementById("e1").innerHTML= " ";
- document.getElementById("e1").style.borderColor='black';
+ { document.getElementById("el").innerHTML= " ";
+ document.getElementById("el").style.borderColor='black';
  } 
  return r;
  }
  //username 
  var usr = document.getElementById("username").value; 
         if (usr == "") {
-            document.getElementById("elusername").innerHTML = "* username must be filled out ";
+            document.getElementById("eluser").innerHTML = "* username must be filled out ";
 
-            document.getElementById("elusername").style.color = 'red';
+            document.getElementById("eluser").style.color = 'red';
             return r;
         }
         else {
-            document.getElementById("elusername").innerHTML = " ";
-            document.getElementById("elusername").style.color = 'black';
+            document.getElementById("eluser").innerHTML = " ";
+            document.getElementById("eluser").style.color = 'black';
 
         }
+         //password 
+         var pass = document.getElementById("password").value; 
+     var regEx2 = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/;
+     if (pass == "") {
+         document.getElementById("elpass").innerHTML = "* password must be filled out ";
+
+         document.getElementById("elpass").style.color = 'red';
+         return r;
+     }
+     else if (pass.innerHTML = x.innerHTML ) {
+         document.getElementById("elpass").innerHTML = "* Should not the same of user-name ";
+
+         document.getElementById("elpass").style.color = 'red';
+         return r;
+         }
+     else if (!(pass.match(regEx2)))
+     {
+         document.getElementById("elpass").innerHTML = "* your password Should be 6- 10 length and Al least one small letter and one capital letter and one digit ";
+
+         document.getElementById("elpass").style.color = 'red';
+         return r;
+     }
+     else {
+         document.getElementById("elpass").innerHTML = " ";
+         document.getElementById("elpass").style.color = 'black';
+     }
  </script>
 </head>
 <body>

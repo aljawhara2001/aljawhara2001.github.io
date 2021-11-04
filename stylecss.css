@@ -13,7 +13,7 @@ form{
     transform: translate(-50%, -50%);
     width: 35%;
     height: 60%;
-    background: rgba(158, 154, 154, 0.5);
+    background: rgba(243, 242, 242, 0.719);
     border-radius: 15%;
     box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ top: -50px;
 left: 118px;
 }
 h2{
-    color: seashell;
+    color: rgb(44, 41, 39);
     text-align: center;
     margin-top: 90px;
 }
@@ -36,7 +36,7 @@ input[type="text"],[type="password"],[type="email"],[type="tel"]{
     border-bottom: 2px solid#0094ff;
     background: none;
     padding: 5px;
-    color: white;
+    color: rgb(26, 22, 22);
 }
 input[type="text"]{
     top: 140px;
@@ -65,7 +65,7 @@ input[value="login"]{
     background: turquoise;
     border: none;
     outline: none;
-    color: white;
+    color: rgb(236, 223, 223);
     border-radius: 15px;
     font-size: 20px;
 }
